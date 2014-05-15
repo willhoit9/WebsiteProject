@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Reservations</title>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="../images/favicon.ico" >
+		<link rel="stylesheet" href="../styles/main.css" media="screen, projection" >
+
+	<style>
+		.clearfix:before,
+		.clearfix:after {
+  			  content:"";
+    			display:table;
+				}
+			.clearfix:after {
+   			 clear:both;
+			}
+		</style>
+
+		<!--[if lt IE 8]>
+				<style>
+				/* For IE < 8 (trigger hasLayout) */
+				.clearfix {
+ 				  zoom:1;
+				}
+			</style>
+			<![endif]-->
+
+	</head>
+	<body>
+		<header>
+			<img src="../images/sanctlogotrans_white.png" alt="Sanct" class="flex" >
+		</header>
+		<nav id="pageNav">
+			<ul>
+				<li><a href="../index.html" >Home</a></li>
+				<li><a href=foodmenu.html>Food</a></li>
+				<li><a href=drinks.html>Drinks</a></li>
+				<li><a href=gallery.html>Gallery</a></li>
+				<li><a href=reservations.html class="current">Reservations</a></li>
+				<li><a href=contact.html>Contact</a></li>
+			</ul>
+			      <select onchange="window.location.href=this.value;">
+					<option value="../index.html" >Home</option>
+					<option value="foodmenu.html" >Food Menu</option>
+					<option value="drinks.html" >Drinks Menu</option>
+       				<option value="gallery.html">Gallery</option>
+					<option value="reservations.html" selected>Reservations</option>
+					<option value="contact.html">Contact Us</option>	
+					<option value="http://www.sanctuarypub.com/">Old Page</option>	
+				</select>
+		</nav>
+
+
+		<div id="pageTitle">
+			<h1>RESERVATIONS</h1>	
+		</div>
+
+		
+		<section id="mainMenu">
+
+			
+				<aside id="reserve">
+				  	<p>We've never had anyone make reservations before. I bet you've never made them before. Hey.. why not? I've never seen it full here, but what's it gonna hurt? It'll probably impress your guests. You'll be bringing guests correct? Oh.</p>
+  					
+				</aside>
+	
+	
+	<!-- Form  -->			
+				
+				<article id="reservations">
+						
+    	<form action="reservations.html" method="get"
+        	name="registration_form" id="registration_form">
+    		<fieldset>
+        		<legend>Reservations Form</legend>
+        		
+        		<label for="starting_date">Dining Date: &nbsp;</label>
+				<input type="date" name="starting_date" id="starting_date" required><br>
+ 				
+ 				<label for="tickets">How Many? &nbsp;</label>       		
+        		<input type="number" name="tickets" id="tickets" value="1" min="1" max="1" placeholder="from 1 to 1"><br>
+        		
+        		<label for="first_name">First Name:</label>
+				<input type="text" name="first_name" id="first_name" required><br>
+				
+				<label for="last_name">Last Name:</label>
+				<input type="text" name="last_name" id="last_name" required><br>
+				
+				<label for="phone">Phone Number:</label>
+				<input type="tel" name="phone" id="phone" placeholder="999-999-9999" 
+				       pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-999 format"><br>
+
+				<label for="submit">Submit:</label>
+				<input type="submit" id="submit" value="Table for One :(">
+			<br>       
+			</fieldset>
+		</form>
+	
+	</article>	 
+			
+			
+			<p class="clearP"> </p>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<nav id="footerNav">
+				<ul>
+				<li><a href="http://www.facebook.com/pages/Sanctuary-Pub/120234599054" target="_blank"><img src="../images/facebook.png" alt="Facebook" class="socpix"></a></li>
+				<li><a href=" http://www.urbanspoon.com/r/105/1482007/restaurant/Cedar-Rapids-Iowa-City/Sanctuary-Iowa-City" target="_blank"><img src="../images/urbanspoon2.png" alt="Urbanspoon" class="socpix"></a></li>
+				<li><a href=" http://www.yelp.com/biz/sanctuary-pub-iowa-city" target="_blank"><img src="../images/yelp.png" alt="Yelp" class="socpix"></a></li>
+				<li><a href="https://twitter.com/" target="_blank"><img src="../images/twitter2.png" alt="Twitter" class="socpix"></a></li>
+			</ul>
+		</nav>			
+		</footer>
+	</body>
+</html>

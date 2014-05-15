@@ -1,0 +1,292 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Food Menu</title>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="../images/favicon.ico" >
+		<link rel="stylesheet" href="../styles/main.css" media="screen, projection" >
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'>
+</script>
+    <script type="text/javascript">
+        $(function() {
+            var offset = $("#foodNav").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#foodNav").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#foodNav").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+    
+	<style>
+		.clearfix:before,
+		.clearfix:after {
+  			  content:"";
+    			display:table;
+				}
+			.clearfix:after {
+   			 clear:both;
+			}
+		</style>
+
+		<!--[if lt IE 8]>
+				<style>
+				/* For IE < 8 (trigger hasLayout) */
+				.clearfix {
+ 				  zoom:1;
+				}
+			</style>
+			<![endif]-->
+
+	</head>
+	<body>
+		<header>
+			<img src="../images/sanctlogotrans_white.png" alt="Sanct" class="flex" >
+		</header>
+		<nav id="pageNav">
+			<ul>
+				<li><a href="../index.html" >Home</a></li>
+				<li><a href=foodmenu.html class="current">Food</a></li>
+				<li><a href=drinks.html>Drinks</a></li>
+				<li><a href=gallery.html>Gallery</a></li>
+				<li><a href=reservations.html>Reservations</a></li>
+				<li><a href=contact.html>Contact</a></li>
+			</ul>
+			      <select onchange="window.location.href=this.value;">
+					<option value="../index.html" >Home</option>
+					<option value="foodmenu.html" selected>Food Menu</option>
+					<option value="drinks.html">Drinks Menu</option>
+       				<option value="gallery.html">Gallery</option>
+					<option value="reservations.html">Reservations</option>
+					<option value="contact.html">Contact Us</option>	
+					<option value="http://www.sanctuarypub.com/">Old Page</option>	
+				</select>
+		</nav>
+
+
+		<div id="pageTitle">
+			<h1>FOOD MENU</h1>	
+		</div>
+
+		
+		<section id="mainMenu">
+
+			
+				<aside id="foodNav">
+				  
+  					<ul>   
+	  					<li><a href="#salads" class="scroll" title="Salads">Salads</a></li>
+						<li><a href="#smallplates" class="scroll" title="Small Plates">Small Plates</a></li>
+					  	<li><a href="#sandwiches" class="scroll" title="Sandwiches">Sandwiches</a></li>
+	  					<li><a href="#dinners" class="scroll" title="Dinners">Dinners</a></li>
+						 <li><a href="#pizza" class="scroll" title="Pizza">Pizza</a></li>
+	  					<li><a href="#desserts" class="scroll" title="Desserts">Desserts</a></li>    					
+ 					 </ul>
+				</aside>
+	
+	
+	<!-- FOOD LIST  -->			
+				
+				<article id="foodList">
+					<h2 id="salads">Salads</h2>
+  					<ul>   
+	  					<li><p class="clearfix"><span class="item">Smoked Paprika Chicken - <br><em>with organic greens</em></span>
+	  						<span class="price"> 9 </span></p></li>
+						<li><p class="clearfix"><span class="item">Spinach Salad - <br><em>Spinach greens with feta cheese  &amp; Dijon vinaigrette.</em></span>
+							<span class="price"> 6 </span></p></li>
+					  	<li><p class="clearfix"><span class="item">Side Salad</span>
+					  		<span class="price"> 4 </span></p></li>
+	  					<li><p class="clearfix"><span class="item">Balsamic or Dijon Vinaigrette, Creamy Italian, Maytag Blue Cheese</span></p></li>					
+ 					 </ul>
+ 					 <br>
+ 					 
+ 					 
+ 					 <h2 id="smallplates">Small Plates</h2>
+  					<ul>   
+	  					<li><p class="clearfix"><span class="item">Witty Cilantro Mussels -<br><em>Mussels steamed in Belgian Witbier</em></span>
+	  						<span class="price"> 9 </span></p></li>
+						<li><p class="clearfix"><span class="item">Cheese Plate -<br><em>  Prairie Breeze, Reserve Gouda &amp; Maytag Blue</em></span>
+							<span class="price">13 </span></p></li>
+					  	<li><p class="clearfix"><span class="item">Soup -<br><em>ask for selections</em></span>
+					  		<span class="price">3 </span></p></li>
+	  					<li><p class="clearfix"><span class="item">Hummus Plate -<br><em>housemade hummus</em></span>
+	  						<span class="price"> 6</span></p></li>
+						 <li><p class="clearfix"><span class="item">Lamb Sliders -<br><em>Lamb burger with gruyere  &amp; cornichon aoli. one or two.</em> </span>
+						 	<span class="price"> 4, 7 </span></p></li>
+	  					<li><p class="clearfix"><span class="item">Pulled Pork Slider  -<br><em>Pavelka's pork with honey-bourbon sauce and apple slaw. one or two.</em></span>
+							<span class="price">4, 7</span></p></li>				
+ 					 	<li><p class="clearfix"><span class="item"> Black Bean Vegetarian Slider - <br><em>With cheese and avacado mayo. one or two. </em> </span>
+							<span class="price"> 4, 7 </span></p></li>
+									  
+  						<li><p class="clearfix"><span class="item"> Crab Cake Slider - <br> <em> With dijon dressing. one or two </em> </span>
+							<span class="price"> 4, 7 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Halibut Slider  - <br> <em> Panko crusted halibut with sharp cheddar, fresh dill &amp; caper sauce. one or two </em> </span>
+							<span class="price"> 6, 10 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Ipa &amp; Blue Cheese  - <br> <em> Boulevard ipa &amp; matayg blue cheese dip with crostini</em> </span>
+							<span class="price"> 6 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Brie Baked In Phyllo  - <br> <em> With rosemary, basil balsamic vinaigrette </em> </span>
+							<span class="price"> 9 </span></p></li>		
+						
+						<li><p class="clearfix"><span class="item"> Artichoke Crostini  - <br> <em> Toast with a spicy artichoke dip</em> </span>
+							<span class="price"> 6 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Chips &amp; Salsa  - <br> <em> With fresh cilantro salsa </em> </span>
+							<span class="price"> 3.5 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Garlic Bread Basket - <br> <em> Garlic &amp; herb butter</em> </span>
+							<span class="price"> 3.5 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Sea Scallops  - <br> <em> With cilantro-jalepeno corn salsa </em> </span>
+							<span class="price"> 7 </span></p></li>
+							
+														
+ 					 </ul>
+ 					 <br>
+ 					 
+ 					  					 
+ 					 <h2 id="sandwiches">Sandwiches</h2>
+  					<ul>
+							<li><p class="clearfix"><span class="item"> <br> <em> Add A Cup Of Soup Or Side Salad For</em> </span>
+							<span class="price"> 2 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Beef Ana - <br> <em> Spicy, sliced marinated beef steak &amp; fontina sandwich </em> </span>
+							<span class="price"> 7 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> B.M.T. - <br> <em> Fresh basil, mozzarella &amp; tomato </em> </span>
+							<span class="price"> 7 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Basil Pesto Chicken  </span>
+							<span class="price"> 7 </span></p></li>
+							
+						<li><p class="clearfix"><span class="item"> Pit Smoked Ham &amp; Fontina  </span>
+							<span class="price"> 7 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Wine Braised Meatballs   </span>
+							<span class="price"> 7 </span></p></li>			  
+
+ 					 </ul>
+ 					 <br>
+
+ 					 
+ 					 <h2 id="dinners">Dinners</h2>
+  					<ul>
+  						<li><p class="clearfix"><span class="item"> <br> <em> Served With Warm Garlic &amp; Herb Buttered Bread</em> </span>
+							</p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Elk Meatloaf  - <br> <em> Locally raised elk and beef with a Bell's stout tomato sauce. With buttermilk mashed potatoes </em> </span>
+							<span class="price"> 14 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Short Ribs  - <br> <em> Beef ribs braised in london porter with fresh herbs with mashed potatoes </em> </span>
+							<span class="price"> 14 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Coq Au Vin  - <br> <em> Chicken leg quarters braised in red wine, shallots, fennel and garlic </em> </span>
+							<span class="price"> 10 </span></p></li>
+							
+						<li><p class="clearfix"><span class="item"> Shepard's Pie  - <br> <em> Proper british comfort food with locally raised ground lamb, herbs, vegetables &amp; a bit of guinness topped off with buttermilk mashed potatoes </em> </span>
+							<span class="price"> 14 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Salmon  - <br> <em> Wild caught salmon poached in butter, lemon &amp; fresh dill with honey &amp; red pepper couscous</em> </span>
+							<span class="price"> 14 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Mahi Mahi  - <br> <em> With a mango reduction over fruit couscous</em> </span>
+							<span class="price"> 11 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Meatballs Campania  - <br> <em> Braised in tomato-wine sauce with fresh basil, over angel hair pasta </em> </span>
+							<span class="price"> 13 </span></p></li>		
+	   					
+	   					<li><p class="clearfix"><span class="item"> Eggplant Lasagna  - <br> <em> With zuchinni, mozarella &amp; asiago </em> </span>
+							<span class="price"> 11 </span></p></li>	
+	   					
+ 					 </ul>
+  					 <br>
+  					 
+  					 					 
+ 					 <h2 id="pizza">Pizzas</h2>
+  					<ul>
+  						<li><p class="clearfix"><span class="item"> Pizza Pimienta  - <br> <em> A southwestern clinatro pesto sauce with fontinella cheese, roasted red peppers, jalpenos green peppers &amp; tomato. </em> </span>
+							<span class="price"> 15 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Pesto Pizza  - <br> <em> Asiago cheese &amp; mozzarella on fresh basil-walnut pesto </em> </span>
+							<span class="price"> 11 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Pizza Fontina  - <br> <em>  Fontinella &amp; mozzarella topped with fresh broccoli, tomato, mushroom &amp; onion. </em> </span>
+							<span class="price"> 15 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Vegetarian - <br> <em>  Mushroom, onion, greeen pepper, ripe &amp; green olive. </em> </span>
+							<span class="price"> 16 </span></p></li>
+							
+						<li><p class="clearfix"><span class="item">  Pizza Margherita  - <br> <em>  Mozzarella, fesh basil, fresh tomato </em> </span>
+							<span class="price"> 13 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item">  Sanctuary Special  - <br> <em>  Sausage, smoked ham, pepperoni, onions, green pepper, mushroom </em> </span>
+							<span class="price"> 17 </span></p></li>			  
+						</ul>	
+							<br>
+ 					 				 
+ 					 					 		 
+ 					 <h2 id="desserts">Desserts</h2>
+  					<ul>
+  						<li><p class="clearfix"><span class="item"> Cheesecake </span>
+							<span class="price"> 4 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item"> Molten Dark Chocolate Bundt Cake - <br> <em> With Raspberry Sauce</em> </span>
+							<span class="price"> 6 </span></p></li>			  
+							
+   						<li><p class="clearfix"><span class="item"> Vanilla Creme Brulee  </span>
+							<span class="price"> 4 </span></p></li>		
+							  
+  						<li><p class="clearfix"><span class="item"> Millstream Root Beer Float </span>
+							<span class="price"> 5 </span></p></li>
+						<li><p class="clearfix"><span class="item"> New York Vanilla Ice Cream   </span>
+							<span class="price"> 3 </span></p></li>		  
+							
+  						<li><p class="clearfix"><span class="item">  Chocolate Sundae  </span>
+							<span class="price"> 4 </span></p></li>			  
+							
+
+   					
+ 					 </ul> 					 
+  					 <br>					 
+ 					 
+				</article>
+			
+			<p class="clearP"> </p>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<nav id="footerNav">
+				<ul>
+				<li><a href="http://www.facebook.com/pages/Sanctuary-Pub/120234599054" target="_blank"><img src="../images/facebook.png" alt="Facebook" class="socpix"></a></li>
+				<li><a href=" http://www.urbanspoon.com/r/105/1482007/restaurant/Cedar-Rapids-Iowa-City/Sanctuary-Iowa-City" target="_blank"><img src="../images/urbanspoon2.png" alt="Urbanspoon" class="socpix"></a></li>
+				<li><a href=" http://www.yelp.com/biz/sanctuary-pub-iowa-city" target="_blank"><img src="../images/yelp.png" alt="Yelp" class="socpix"></a></li>
+				<li><a href="https://twitter.com/" target="_blank"><img src="../images/twitter2.png" alt="Twitter" class="socpix"></a></li>
+			</ul>
+		</nav>			
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Drinks Menu</title>
+		<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="shortcut icon" href="../images/favicon.ico" >
+		<link rel="stylesheet" href="../styles/main.css" media="screen, projection" >
+
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'>
+</script>
+    <script type="text/javascript">
+        $(function() {
+            var offset = $("#foodNav").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#foodNav").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#foodNav").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+    
+	<style>
+		.clearfix:before,
+		.clearfix:after {
+  			  content:"";
+    			display:table;
+				}
+			.clearfix:after {
+   			 clear:both;
+			}
+		</style>
+
+		<!--[if lt IE 8]>
+				<style>
+				/* For IE < 8 (trigger hasLayout) */
+				.clearfix {
+ 				  zoom:1;
+				}
+			</style>
+			<![endif]-->
+
+	</head>
+	<body>
+		<header>
+			<img src="../images/sanctlogotrans_white.png" alt="Sanct" class="flex" >
+		</header>
+		<nav id="pageNav">
+			<ul>
+				<li><a href="../index.html" >Home</a></li>
+				<li><a href=foodmenu.html>Food</a></li>
+				<li><a href=drinks.html class="current">Drinks</a></li>
+				<li><a href=gallery.html>Gallery</a></li>
+				<li><a href=reservations.html>Reservations</a></li>
+				<li><a href=contact.html>Contact</a></li>
+			</ul>
+			      <select onchange="window.location.href=this.value;">
+					<option value="../index.html" >Home</option>
+					<option value="foodmenu.html" >Food Menu</option>
+					<option value="drinksmenu.html" selected>Drinks Menu</option>
+       				<option value="gallery.html">Gallery</option>
+					<option value="reservations.html">Reservations</option>
+					<option value="contact.html">Contact Us</option>	
+					<option value="http://www.sanctuarypub.com/">Old Page</option>	
+				</select>
+		</nav>
+
+
+		<div id="pageTitle">
+			<h1>DRINKS MENU</h1>	
+		</div>
+
+		
+		<section id="mainMenu">
+
+			
+				<aside id="foodNav">
+				  
+  					<ul>   
+	  					<li><a href="#drafts" class="scroll" title="Drafts">Draft Beers</a></li>
+						<li><a href="#bottles" class="scroll" title="Bottles">Bottled Beers</a></li>
+					  	<li><a href="#belgium" class="scroll" title="Belgium">Belgium</a></li>
+
+						<li><a href="#england" class="scroll" title="England">England</a></li>
+	  					<li><a href="#france" class="scroll" title="France">France</a></li>
+						<li><a href="#germany" class="scroll" title="Germany">Germany</a></li>
+						<li><a href="#holland" class="scroll" title="Holland">Holland</a></li>
+						<li><a href="#ireland" class="scroll" title="Ireland">Ireland</a></li>	  					    					
+ 					 </ul>
+				</aside>
+	
+	
+	<!-- FOOD LIST  -->			
+				
+				<article id="foodList">
+					<h2 id="drafts">Draft Beers</h2>
+  					<ul>   
+	  					<li><p class="clearfix"><span class="item">Framboise Lambic - <br><em>Belgian raspberry wheat beer</em></span>
+	  					</p></li>
+	  						
+						<li><p class="clearfix"><span class="item">Brother Thelonious - <br><em>Temporarily out..expected Wed 12/5</em></span>
+							</p></li>
+							
+					  	<li><p class="clearfix"><span class="item">Founders Bolt Cutter Barley Wine</span>
+					  		</p></li>
+					  		
+	  					<li><p class="clearfix"><span class="item">La Chouffe - <br><em>Tclassic Belgian tripel </em> </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item">Ommegang Belgian Independence Day Tripel </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Ommegang Belgian Style Witte </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Ace Pear Cider </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Arrogant Bastartd </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Bells Java Stout
+ </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item">Bell's Two Hearted IPA </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Boulevard Double Wide IPA </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item">Madhouse Coffee Stout </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item">Toppling Goliath Dorothy's Lager  </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item">Toppling Goliath Golden Nugget </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Toppling Goliath pseudoSue IPA </span></p></li>
+	  					
+	  					<li><p class="clearfix"><span class="item"> Evil Twin PHAT Porter </span></p></li>	  					
+
+	  					<li><p class="clearfix"><span class="item">  Founders Dirty Bastard </span></p></li>
+	  					
+						<li><p class="clearfix"><span class="item">Fuller's ESB    - <br><em>superb, complex a true Brit bitter</em></span>
+							</p></li>	  					
+
+						<li><p class="clearfix"><span class="item">Fuller's London Porter  - <br><em>perfect porter</em></span>
+							</p></li>	  	
+	  					
+	  					<li><p class="clearfix"><span class="item"> Red Seal Pale Ale </span></p></li>	  					
+	  					<li><p class="clearfix"><span class="item">Guinness Stout     - <br><em>brewed at St James Gate Dublin for 250 years</em></span>
+							</p></li>	  	
+							
+						<li><p class="clearfix"><span class="item">Peace Tree Hop Sutra  - <br><em> from Iowa's Peace Tree Brewery in Knoxville</em></span>
+							</p></li>	  									
+	  					
+	  					<li><p class="clearfix"><span class="item">Rogue Dead Guy Ale
+ </span></p></li>
+
+						<li><p class="clearfix"><span class="item">Rogue Hazelnut Brown Ale  - <br><em>5 time world beer champion</em></span>
+							</p></li>	  		  					
+	  					<li><p class="clearfix"><span class="item">Stone Smoke Porter </span></p></li>	  		  						  					
+
+						<li><p class="clearfix"><span class="item">Weihenstephaner Weisse  - <br><em>one of the world's best wheat beers</em></span>
+							</p></li>	  	
+
+	  										
+ 					 </ul>
+ 					 
+ 					 
+ 					 
+ 					 
+ 					 
+ 					 <br>
+ 					 
+ 					 
+ 					 <h2 id="bottles">Belgium Bottles</h2>
+  					<ul id="belgium">   
+	  					<li><p class="clearfix"><span class="item">   Blanche de Bruxelles   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Chimay Blue   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Chimay Red   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Lindeman Kriek Lambic   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Lindeman Peche Lambic   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Orval Trappist   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Piraat   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Rochefort 6   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Rochefort 8   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Rochefort 10   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   St. Bernardus ABT12   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Westmalle Trappist Dubbel   </span></p></li>	  						  	  					
+	  					<li><p class="clearfix"><span class="item">   Westmalle Trappist Tripel   </span></p></li>
+ 				</ul>
+ 					 <br>
+ 					 					  				
+ 					 
+ 					 <h2 id="england">English Bottles</h2>
+  					<ul>
+ 	  					<li><p class="clearfix"><span class="item">   Black Sheep Ale   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Bluebird Bitter   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Boddington's Pub Ale Pale   </span></p></li>	  						  	  					
+	  					<li><p class="clearfix"><span class="item">   Ruddle's Country Ale   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Samuel Smith Imperial Stout   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Samuel Smith Nut Brown Ale   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">  Founders   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Samuel Smith Taddy Porter   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Samuel Smith Oatmeal Stout   </span></p></li>	  						   						
+ 	  					<li><p class="clearfix"><span class="item">   St. Peter's Old Style Porter   </span></p></li> 	   					
+ 					 </ul>
+  					 <br>
+  					 
+  					 					 
+ 					 <h2 id="france">French Bottles</h2>
+  					<ul>
+ 	  					<li><p class="clearfix"><span class="item">   Fischer Amber Ale   </span></p></li>  							  
+					</ul>	
+							<br>
+ 					 				 
+ 					 					 		 
+ 					 
+ 					 
+ 					 
+ 					 <h2 id="germany">Germany Bottles</h2>
+  					<ul>
+	  					<li><p class="clearfix"><span class="item">   Ayinger Altbairisch Dunkel   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Ayinger Brau Weiss   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Ayinger Celebrator  Doppelbock   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Ayinger Jahrhundert   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Ayinger Jahrhundert   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Aventinus Hopfen-Weiss   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Clausthaler Amber  (non alcoholic)   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Franziskaner Weiss   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Franziskaner Dark Weiss   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Pinkus Alt   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Pinkus Hefe Weizen   </span></p></li>
+	  					<li><p class="clearfix"><span class="item">   Pinkus Ur Pils   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Schlenkerla Rauchbier   </span></p></li>  									  
+							
+
+   					
+ 					 </ul> 					 
+  					 <br>	
+
+ 					 <h2 id="holland">Dutch Bottles</h2>
+  					<ul>
+ 	  					<li><p class="clearfix"><span class="item">   Amstel light   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Heineken   </span></p></li>   									  
+							
+
+   					
+ 					 </ul> 					 
+  					 <br>	  					 				 
+
+ 					 <h2 id="ireland">Irish Bottles</h2>
+  					<ul>
+ 	  					<li><p class="clearfix"><span class="item">   Guinness Extra Stout   </span></p></li>	  						  	  					<li><p class="clearfix"><span class="item">   Smithwick's Ale   </span></p></li>   									  
+							
+
+   					
+ 					 </ul> 					 
+  					 <br>						 
+				</article>
+			
+			<p class="clearP"> </p>
+		</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<footer>
+			<nav id="footerNav">
+				<ul>
+				<li><a href="http://www.facebook.com/pages/Sanctuary-Pub/120234599054" target="_blank"><img src="../images/facebook.png" alt="Facebook" class="socpix"></a></li>
+				<li><a href=" http://www.urbanspoon.com/r/105/1482007/restaurant/Cedar-Rapids-Iowa-City/Sanctuary-Iowa-City" target="_blank"><img src="../images/urbanspoon2.png" alt="Urbanspoon" class="socpix"></a></li>
+				<li><a href=" http://www.yelp.com/biz/sanctuary-pub-iowa-city" target="_blank"><img src="../images/yelp.png" alt="Yelp" class="socpix"></a></li>
+				<li><a href="https://twitter.com/" target="_blank"><img src="../images/twitter2.png" alt="Twitter" class="socpix"></a></li>
+			</ul>
+		</nav>			
+		</footer>
+	</body>
+</html>

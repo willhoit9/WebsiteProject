@@ -1,0 +1,313 @@
+/*  - - - - - - - - - BEGIN OF GALLERY STYLE - - - - - - - - - - - - - - - - - - */
+
+/*global styles*/
+
+
+
+aside, article, figure, figcaption, menu,  section, header, footer, nav, div {
+	display: block;
+}
+
+html, body,div, section, article, aside, header, hgroup, footer, nav, h1, h2, h3, h4, h5, h6, p, span, em, strong, img, ol, ul, li, figure, th, td, tr {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background: rgb(237,242,215);
+}
+body {
+	width: 90%;
+	max-width: 900px;
+	min-width: 330px;
+	background: rgb(40,25,25) ;
+	margin: 0 auto 2em;
+	font: 100% Georgia, "Times New Roman", Times, serif;
+	color: white;
+}
+
+header {
+	background: rgb(40,25,25) ;
+	margin-bottom: 0px;
+	padding: 1% 2% 0 2%;
+	border-bottom: 10px solid rgb(71,17,16);
+}
+
+.flex {
+	max-width: 95%;
+	padding-left: 2.5%;
+}
+
+	
+#pageNav {
+	padding:0;
+	margin:0;
+	border: 0;
+	border-bottom: 10px solid rgb(71,17,16);
+}
+	
+#pageNav ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		text-align: center;	
+		}
+		
+#pageNav  li {
+		display: inline;
+		padding: 0 ;
+		}
+	
+#pageNav a {
+		font-size: 1.45em;
+		line-height: 1.6em;
+		font-weight: bold;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 0 .42em;
+		}
+		
+
+#pageNav  a.current { color: rgb(98,78,41);}
+	
+#pageNav  ul li a:hover {
+	background: rgb(30,15,15);
+}	
+
+
+	
+footer {
+	clear: both;
+	border-top: 10px solid rgb(71,17,16);
+}	
+
+#footerNav {
+	padding: 0;
+	margin:0;
+	border: 0;
+}
+	
+#footerNav ul {
+		list-style: none;
+		padding: 0;
+		padding-top: 5px;
+		margin: 0;
+		text-align: center;	
+		}
+		
+#footerNav  li {
+		display: inline;
+		padding: 0 ;
+		}
+	
+#footerNav a {
+
+		line-height: 1.6em;
+		font-weight: bold;
+		color: white;
+		padding: 0 .3em;
+		}
+	
+#footerNav  a.current { color: rgb(98,78,41);}
+	
+#footerNav  ul li a:hover {
+	background: rgb(30,15,15);
+}	
+
+
+
+#pageTitle {
+		background: rgb(71,17,16);
+		border-bottom: 10px solid rgb(71,17,16);
+}
+
+#pageTitle h1 {
+		text-align:center;
+		font-size: 3em;
+}
+
+
+/*desktop styles*/
+@media only screen and (min-width:769px) {
+	
+	#pageNav select {
+	display: none;
+	} 
+	
+body {	
+		width: 960px;
+}
+
+.photos {
+	background:  rgb(40,25,25);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid rgb(40,25,25);
+	width: 840px;
+	margin: 0 auto;
+}
+
+
+
+.photo1 {
+	background: url("../images/sanctinsta398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+.photo2 {
+	background: url("../images/Sancxmas398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo3 {
+	background: url("../images/sanctgrowlers398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo4 {
+	background: url("../images/sanctoutside398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+}
+
+
+
+
+/*tablet styles*/
+@media only screen and (min-width:481px) and (max-width:768px) {
+	
+	#pageNav select {
+	display: none;
+	}
+
+	
+	body {
+		width: 700px;
+}
+
+.photos {
+	background:  rgb(40,25,25);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid rgb(40,25,25);
+	width: 420px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url("../images/sanctinsta398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+.photo2 {
+	background: url("../images/Sancxmas398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo3 {
+	background: url("../images/sanctgrowlers398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin:10px;
+	float: left;
+}
+.photo4 {
+	background: url("../images/sanctoutside398.jpg") no-repeat;
+	width: 400px;
+	height: 400px;
+	margin: 10px;
+	float: left;
+}
+}
+
+
+
+
+
+/*mobile styles*/
+@media only screen and (max-width:480px) {
+	
+	
+	
+	
+#pageTitle h1 {
+		font-size: 1.5em;
+}	
+	
+	
+#pageNav select {
+	width: 80%;
+	display: block;
+	margin: 1em auto;
+}
+
+	
+	
+	
+body {
+		width: 320px;
+}
+
+#pageNav ul  {
+	display: none;
+}
+
+
+.photos {
+	background:  rgb(40,25,25);
+	padding:10px;
+	overflow: hidden;
+	border: 1px solid rgb(40,25,25);
+	width: 220px;
+	margin: 0 auto;
+}
+.photo1 {
+	background: url("../images/sanctinsta198.jpg") no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}
+.photo2 {
+	background: url("../images/Sancxmas198.jpg") no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo3 {
+	background: url("../images/sanctgrowlers198.jpg") no-repeat;
+	width: 200px;
+	height: 200px;
+	margin:10px 10px 20px;
+}
+.photo4 {
+	background: url("../images/sanctoutside198.jpg") no-repeat;
+	width: 200px;
+	height: 200px;
+	margin: 10px 10px 20px;
+}
+}
+
+
+
+
+
+
+/*  - - - - - - - - - end of gallery style - - - - - - - - - - - - - - - - - - */
